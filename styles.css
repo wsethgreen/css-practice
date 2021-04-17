@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("images/ecommerce.jpg");
+    background-position: center center; 
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: #5e99e3;
+}
+
+.navbar-brand {
+    color: #060613;
+}
+
+.navbar-toggler {
+    color: #060613;
+}
+
+.nav-link {
+    color: #060613;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #3049b5;
+    border-bottom: 2px solid #3049b5;
+}
+
+.cart_icon {
+    height: 20px;
+    width: 30px;
+}
+
+.search_icon {
+    height: 20px;
+    width: 20px;
+}
+
+.category__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto 20px auto;
+    width: 90%;
+}
+
+.home_header {
+    color: #f1f1f1;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+
+.image_link {
+    margin: 0 auto 0 auto;
+}
+
+.home_image {
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    margin: 10px auto 10px auto;
+    animation: slideMe 1s ease-in;
+}
+
+@keyframes slideMe {
+    0% {
+        transform: skewX(53deg) translateX(-500px);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px auto 20px auto;
+}
+
+.about_header {
+    color: #f1f1f1;
+    font-size: 3em;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.about_info {
+    color: #f1f1f1;
+    font-size: 2em;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 20px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #060613;
+}
+
+.footer__copyright, .footer__link {
+    margin: auto 0 auto 0;
+    padding: 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 480px) {
+
+    .nav-link {
+        font-size: 1.5em;
+    }
+    .category__container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .category {
+        width: 25%;
+        margin: 20px
+    }
+}
